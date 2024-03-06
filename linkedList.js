@@ -23,10 +23,10 @@ class linkedList {
     }
 
     prepend(value) {
-        let newNode = new Node(value);
+        const newNode = new Node(value);
         newNode.next = this.listHead;
         this.listHead = newNode;
-        this.size++;
+        this.size += 1;
     }
 
     size(){
